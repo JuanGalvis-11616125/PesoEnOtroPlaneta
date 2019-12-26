@@ -1,0 +1,59 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    background-image: url("../img/Fondo.jpg");
+    background-size: cover; 
+}
+
+h1,p
+{
+    text-align: center;
+    font-family: Arial;
+    color: white;
+}
+
+hr
+{
+    width: 70%;
+    text-align: center;
+}
+
+.Planetas
+{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.Planetas div
+{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.Planetas div img
+{
+    width: 120px;
+    height: 120px;
+}
+
+.Planetas div p
+{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Resultado
+{
+    background-color: black;
+    color: white;
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 20px;
+}

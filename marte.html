@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Peso en el Universo</title>
+
+    <link rel="stylesheet" href="estilos.css/estilos.css">
+
+</head>
+<body>
+
+    <h1>Tu Peso en otro planeta</h1>
+    <hr>
+    <p>En la <b>Tierra</b> pesas diferente que en otros planetas</p>
+
+
+    <div class="Resultado">
+    <script>
+    
+        // DATO INGRESADO POR EL USUARIO POR VENTANA EMERGENTE
+        var Usuario = prompt("Cual es tu peso?");
+        var Planeta = prompt("Elige: {1}Mercurio {2}Venus {3}Tierra {4}Marte {5}Jupiter {6}Saturno {7}Urano {8}Neptuno");
+
+        var g_mercurio = 3.7; //1
+        var g_venus = 8.87; //2
+        var g_tierra = 9.8; //3
+        var g_marte = 3.7; //4
+        var g_jupiter = 24.8; //5
+        var g_saturno = 10.44; //6
+        var g_urano = 8.87; //7
+        var g_neptuno = 11.15; //8
+
+        var gravedad;
+        var nombre;
+
+        if(Planeta==1)
+        {
+            gravedad = g_mercurio;
+            nombre = "Mercurio";
+        
+        }else if(Planeta==2)
+            {
+                gravedad = g_venus;
+                nombre = "Venus";
+            
+            }else if(Planeta==3)
+                {
+                    gravedad = g_tierra;
+                    nombre = "Tierra";
+                }else if(Planeta==4)
+                    {
+                        gravedad = g_marte;
+                        nombre = "Marte";
+                    }else if(Planeta==5)
+                        {
+                            gravedad = g_jupiter;
+                            nombre = "Jupiter";   
+                        }else if(Planeta==6)
+                            {
+                                gravedad = g_saturno;
+                                nombre = "Saturno";
+                            }else if(Planeta==7)
+                                {
+                                    gravedad = g_urano;
+                                    nombre = "Urano";
+                                }else if(Planeta==8)
+                                    {
+                                        gravedad = g_neptuno;
+                                        nombre = "Neptuno";
+                                    }
+    
+        var Peso = parseInt(Usuario);
+        var Result = (Peso*gravedad)/g_tierra;
+        // CONVERTIR A INT -> ENTERO
+        Result = parseInt(Result);
+
+        document.write("Tu Peso en "+nombre+" es: <b>"+Result+" kilos</b>"); 
+    </script>
+    </div>
+
+    <hr>
+
+    <!-- PLANETAS CON SU GRAVEDAD EN EL SISTEMA SOLAR -->
+    <div class="Planetas">
+        <div><h2>Mercurio</h2><img src="./img/Mercurio.png" alt="Mercurio"><p>g=3.7m/s2</p></div>
+        <div><h2>Venus</h2><img src="./img/Venus.png" alt="Venus"><p>g=8.87m/s2</p></div>
+        <div><h2>Tierra</h2><img src="./img/Tierra.png" alt="Tierra"><p>g=9.8m/s2</p></div>
+        <div><h2>Marte</h2><img src="./img/Marte.png" alt="Marte"><p>g=3.7m/s2</p></div>
+        <div><h2>Jupiter</h2><img src="./img/Jupiter.png" alt="Jupiter"><p>g=24.8m/s2</p></div>
+        <div><h2>Saturno</h2><img src="./img/Saturno.png" alt="Saturno"><p>g=10.44m/s2</p></div>
+        <div><h2>Urano</h2><img src="./img/Urano.png" alt="Urano"><p>g=8.87m/s2</p></div>
+        <div><h2>Neptuno</h2><img src="./img/Neptuno.png" alt="Neptuno"><p>g=11.15m/s2</p></div>
+    </div>
+
+</body>
+</html>
